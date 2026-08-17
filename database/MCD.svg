@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" font-family="Arial, sans-serif">
+
+  <!-- Fond -->
+  <rect width="820" height="500" fill="#f8fafc" rx="12"/>
+
+  <!-- Titre -->
+  <text x="410" y="36" text-anchor="middle" font-size="19" font-weight="bold" fill="#00497c">MCD — Touche pas au klaxon</text>
+
+  <!-- ══════════════════════════════ -->
+  <!-- UTILISATEUR  x=15..200        -->
+  <!-- ══════════════════════════════ -->
+  <rect x="15" y="170" width="185" height="195" fill="#fff" stroke="#0074c7" stroke-width="2" rx="6"/>
+  <rect x="15" y="170" width="185" height="36" fill="#0074c7" rx="6"/>
+  <rect x="15" y="194" width="185" height="12" fill="#0074c7"/>
+  <text x="108" y="194" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">UTILISATEUR</text>
+  <text x="34" y="228" font-size="12" fill="#384050">
+    <tspan x="34" dy="0">• nom</tspan>
+    <tspan x="34" dy="20">• prenom</tspan>
+    <tspan x="34" dy="20">• telephone</tspan>
+    <tspan x="34" dy="20">• email</tspan>
+    <tspan x="34" dy="20">• mot_de_passe</tspan>
+    <tspan x="34" dy="20">• role</tspan>
+  </text>
+
+  <!-- ══════════════════════════════ -->
+  <!-- TRAJET  x=290..510            -->
+  <!-- ══════════════════════════════ -->
+  <rect x="290" y="150" width="220" height="200" fill="#fff" stroke="#0074c7" stroke-width="2" rx="6"/>
+  <rect x="290" y="150" width="220" height="36" fill="#0074c7" rx="6"/>
+  <rect x="290" y="174" width="220" height="12" fill="#0074c7"/>
+  <text x="400" y="174" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">TRAJET</text>
+  <text x="310" y="208" font-size="12" fill="#384050">
+    <tspan x="310" dy="0">• gdh_depart</tspan>
+    <tspan x="310" dy="20">• gdh_arrivee</tspan>
+    <tspan x="310" dy="20">• places_totales</tspan>
+    <tspan x="310" dy="20">• places_disponibles</tspan>
+  </text>
+
+  <!-- ══════════════════════════════ -->
+  <!-- AGENCE  x=620..800            -->
+  <!-- ══════════════════════════════ -->
+  <rect x="620" y="210" width="180" height="85" fill="#fff" stroke="#0074c7" stroke-width="2" rx="6"/>
+  <rect x="620" y="210" width="180" height="36" fill="#0074c7" rx="6"/>
+  <rect x="620" y="234" width="180" height="12" fill="#0074c7"/>
+  <text x="710" y="234" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">AGENCE</text>
+  <text x="640" y="270" font-size="12" fill="#384050">• nom</text>
+
+  <!-- ══════════════════════════════ -->
+  <!-- Association PROPOSE           -->
+  <!-- losange centré à 248,268      -->
+  <!-- ══════════════════════════════ -->
+  <line x1="200" y1="268" x2="228" y2="268" stroke="#384050" stroke-width="1.5"/>
+  <polygon points="228,254 268,268 228,282 188,268" fill="#82b864" stroke="#384050" stroke-width="1.5"/>
+  <line x1="268" y1="268" x2="290" y2="268" stroke="#384050" stroke-width="1.5"/>
+  <text x="204" y="250" font-size="11" fill="#cd2c2e" font-weight="bold">(1,N)</text>
+  <text x="230" y="294" font-size="11" fill="#cd2c2e" font-weight="bold">(1,1)</text>
+  <text x="228" y="272" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">PROPOSE</text>
+
+  <!-- ══════════════════════════════ -->
+  <!-- Association PART DE           -->
+  <!-- losange centré à 565,200      -->
+  <!-- ══════════════════════════════ -->
+  <line x1="510" y1="215" x2="545" y2="200" stroke="#384050" stroke-width="1.5"/>
+  <polygon points="545,186 585,200 545,214 505,200" fill="#82b864" stroke="#384050" stroke-width="1.5"/>
+  <line x1="585" y1="200" x2="620" y2="228" stroke="#384050" stroke-width="1.5"/>
+  <text x="512" y="204" font-size="11" fill="#cd2c2e" font-weight="bold">(1,1)</text>
+  <text x="590" y="218" font-size="11" fill="#cd2c2e" font-weight="bold">(0,N)</text>
+  <text x="545" y="204" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">PART DE</text>
+
+  <!-- ══════════════════════════════ -->
+  <!-- Association ARRIVE A          -->
+  <!-- losange centré à 565,320      -->
+  <!-- ══════════════════════════════ -->
+  <line x1="510" y1="315" x2="545" y2="320" stroke="#384050" stroke-width="1.5"/>
+  <polygon points="545,306 585,320 545,334 505,320" fill="#82b864" stroke="#384050" stroke-width="1.5"/>
+  <line x1="585" y1="320" x2="620" y2="278" stroke="#384050" stroke-width="1.5"/>
+  <text x="512" y="307" font-size="11" fill="#cd2c2e" font-weight="bold">(1,1)</text>
+  <text x="587" y="312" font-size="11" fill="#cd2c2e" font-weight="bold">(0,N)</text>
+  <text x="545" y="324" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">ARRIVE À</text>
+
+  <!-- ══════════════════════════════ -->
+  <!-- Légende                       -->
+  <!-- ══════════════════════════════ -->
+  <rect x="15" y="420" width="790" height="62" fill="#fff" stroke="#dee2e6" stroke-width="1" rx="6"/>
+  <text x="34" y="441" font-size="12" font-weight="bold" fill="#384050">Légende :</text>
+  <rect x="34" y="450" width="14" height="14" fill="#0074c7" rx="2"/>
+  <text x="54" y="462" font-size="11" fill="#384050">Entité</text>
+  <polygon points="110,457 127,450 144,457 127,464" fill="#82b864" stroke="#384050" stroke-width="1"/>
+  <text x="150" y="462" font-size="11" fill="#384050">Association</text>
+  <text x="265" y="462" font-size="11" fill="#cd2c2e" font-weight="bold">(1,1)</text>
+  <text x="286" y="462" font-size="11" fill="#384050">= exactement un</text>
+  <text x="420" y="462" font-size="11" fill="#cd2c2e" font-weight="bold">(1,N)</text>
+  <text x="441" y="462" font-size="11" fill="#384050">= un ou plusieurs</text>
+  <text x="575" y="462" font-size="11" fill="#cd2c2e" font-weight="bold">(0,N)</text>
+  <text x="596" y="462" font-size="11" fill="#384050">= zéro ou plusieurs</text>
+</svg>

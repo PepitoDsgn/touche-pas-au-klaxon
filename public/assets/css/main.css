@@ -1,0 +1,90 @@
+/* ============================================================
+   TOUCHE PAS AU KLAXON — CSS compilé (version sans SCSS)
+   ============================================================ */
+
+/* Header */
+.klaxon-header {
+    border: 2px solid #384050;
+    border-radius: 12px;
+    margin: 16px;
+}
+
+.klaxon-brand {
+    font-weight: 700;
+    color: #c87000 !important;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.btn-admin-nav {
+    background-color: #384050;
+    color: #fff;
+    border: none;
+}
+.btn-admin-nav:hover {
+    background-color: #272e3a;
+    color: #fff;
+}
+
+/* Footer */
+.klaxon-footer {
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+/* Table */
+.klaxon-table {
+    border: 1px solid #dee2e6;
+}
+.klaxon-table thead tr {
+    background-color: #384050;
+    color: #fff;
+}
+.klaxon-table thead th {
+    font-weight: 600;
+    border: none;
+    padding: 0.75rem 1rem;
+}
+.klaxon-table tbody tr:nth-child(odd)  { background-color: #fff; }
+.klaxon-table tbody tr:nth-child(even) { background-color: #f1f8fc; }
+.klaxon-table tbody td {
+    padding: 0.6rem 1rem;
+    vertical-align: middle;
+    border-color: #dee2e6;
+}
+
+/* Boutons d'action */
+.btn-action {
+    background: none;
+    border: none;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.btn-action:hover { opacity: 0.75; }
+.btn-action.btn-details { color: #384050; }
+.btn-action.btn-edit    { color: #0074c7; }
+.btn-action.btn-del     { color: #cd2c2e; }
+
+/* Flash message */
+.alert-flash {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    color: #384050;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+}
+
+/* Titres */
+.klaxon-page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #384050;
+}
+.klaxon-info-msg {
+    font-size: 1.2rem;
+    color: #384050;
+}

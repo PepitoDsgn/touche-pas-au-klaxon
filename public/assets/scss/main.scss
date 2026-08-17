@@ -1,0 +1,135 @@
+// ============================================================
+// TOUCHE PAS AU KLAXON — Styles principaux
+// ============================================================
+
+// Variables Bootstrap remplacées
+$primary:   #0074c7;
+$secondary: #384050;
+$danger:    #cd2c2e;
+$success:   #82b864;
+$light:     #f1f8fc;
+$dark:      #00497c;
+
+@import "bootstrap/scss/bootstrap";
+
+// ------------------------------------------------------------
+// Header
+// ------------------------------------------------------------
+
+.klaxon-header {
+    border: 2px solid $secondary;
+    border-radius: 12px;
+    margin: 16px;
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+}
+
+.klaxon-brand {
+    font-weight: 700;
+    color: #c87000 !important;   // orange proche de la maquette
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.btn-admin-nav {
+    background-color: $secondary;
+    color: #fff;
+    border: none;
+
+    &:hover {
+        background-color: darken($secondary, 8%);
+        color: #fff;
+    }
+}
+
+// ------------------------------------------------------------
+// Footer
+// ------------------------------------------------------------
+
+.klaxon-footer {
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+// ------------------------------------------------------------
+// Table
+// ------------------------------------------------------------
+
+.klaxon-table {
+    border: 1px solid #dee2e6;
+
+    thead tr {
+        background-color: $secondary;
+        color: #fff;
+
+        th {
+            font-weight: 600;
+            border: none;
+            padding: 0.75rem 1rem;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(odd)  { background-color: #fff; }
+            &:nth-child(even) { background-color: $light; }
+
+            td {
+                padding: 0.6rem 1rem;
+                vertical-align: middle;
+                border-color: #dee2e6;
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// Boutons d'action (œil, crayon, poubelle)
+// ------------------------------------------------------------
+
+.btn-action {
+    background: none;
+    border: none;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+
+    &.btn-details { color: $secondary; }
+    &.btn-edit    { color: $primary; }
+    &.btn-del     { color: $danger; }
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+// ------------------------------------------------------------
+// Flash message
+// ------------------------------------------------------------
+
+.alert-flash {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    color: $secondary;
+    border-radius: 4px;
+}
+
+// ------------------------------------------------------------
+// Titres de page
+// ------------------------------------------------------------
+
+.klaxon-page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $secondary;
+}
+
+.klaxon-info-msg {
+    font-size: 1.2rem;
+    color: $secondary;
+}

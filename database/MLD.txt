@@ -1,0 +1,22 @@
+MLD — Touche pas au klaxon
+
+UTILISATEUR (#id, nom, prenom, telephone, email, mot_de_passe, role, created_at)
+
+AGENCE (#id, nom)
+
+TRAJET (#id, gdh_depart, gdh_arrivee, places_totales, places_disponibles, created_at,
+        _user_id => UTILISATEUR.id,
+        _agence_depart_id => AGENCE.id,
+        _agence_arrivee_id => AGENCE.id)
+
+--
+Conventions :
+  #   clé primaire
+  _   clé étrangère  (=> table.colonne référencée)
+
+Contraintes :
+  - UTILISATEUR.email        UNIQUE
+  - AGENCE.nom               UNIQUE
+  - TRAJET.agence_depart_id  ≠ TRAJET.agence_arrivee_id
+  - TRAJET.gdh_arrivee       > TRAJET.gdh_depart
+  - TRAJET.places_disponibles ≤ TRAJET.places_totales
