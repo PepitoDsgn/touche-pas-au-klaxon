@@ -14,7 +14,7 @@ Application intranet de covoiturage inter-sites développée en PHP avec une arc
 ### 1. Cloner le dépôt
 
 ```bash
-git clone <url-du-depot>
+git clone https://github.com/PepitoDsgn/touche-pas-au-klaxon
 cd touche-pas-au-klaxon
 ```
 
